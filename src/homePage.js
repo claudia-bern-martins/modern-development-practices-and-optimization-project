@@ -1,7 +1,7 @@
 //DO NOT CHANGE ANYTHING IN THIS FILE//
 // This file is responsible for loading the home page
 //Imports image for homepage
-const homePageImage = "../images/homePage.png";
+import homePageImage from "../images/homePage.png";
 //Helper functions
 import {
   createHeader,

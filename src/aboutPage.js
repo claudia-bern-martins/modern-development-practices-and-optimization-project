@@ -4,7 +4,7 @@
 //including loading any content about the application and organization.
 //This imports helper functions
 //This imports the image
-const aboutPageImage = "../images/aboutImage.png";
+import aboutPageImage from "../images/aboutImage.png";
 // This function creates a header element
 import {
   createHeader,
