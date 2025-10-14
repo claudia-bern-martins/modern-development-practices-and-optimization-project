@@ -1,0 +1,25 @@
+{
+  "name": "modern-development-practices-and-optimization-project",
+  "version": "1.0.0",
+  "description": "Modern Development Practices and Optimization Project - Preparing for Production",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudia-bern-martins/modern-development-practices-and-optimization-project.git"
+  },
+  "author": "Cláudia Martins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/claudia-bern-martins/modern-development-practices-and-optimization-project/issues"
+  },
+  "homepage": "https://github.com/claudia-bern-martins/modern-development-practices-and-optimization-project#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "eslint": "^9.37.0",
+    "globals": "^16.4.0"
+  }
+}
