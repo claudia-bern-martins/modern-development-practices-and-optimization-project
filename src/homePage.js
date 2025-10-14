@@ -1,7 +1,7 @@
 //DO NOT CHANGE ANYTHING IN THIS FILE//
 // This file is responsible for loading the home page
 //Imports image for homepage
-import homePageImage from "../images/homePage.png";
+const homePageImage = new URL("../images/homePage.png", import.meta.url).href; //Needed to alter this since image was not loading
 //Helper functions
 import {
   createHeader,

@@ -4,7 +4,8 @@
 //including loading any content about the application and organization.
 //This imports helper functions
 //This imports the image
-import aboutPageImage from "../images/aboutImage.png";
+const aboutPageImage = new URL("../images/aboutImage.png", import.meta.url)
+  .href; //Needed to alter this since image was not loading
 // This function creates a header element
 import {
   createHeader,

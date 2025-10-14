@@ -1,61 +1,55 @@
-/* TODO: Manually optimize CSS styling. */
-/* Remove unused and unnecessary styling and selectors */
-/* Card Set Styling */
 .cardSets {
+  border: 2px solid #d3d3d3;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 85%;
   height: 100%;
   margin: 5%;
   padding: 10px;
-  border: 2px solid lightgray;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px lightgray;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  box-shadow: 0 2px 5px #d3d3d3;
 }
 
 .cardSets:hover {
-  border-color: black;
+  border-color: #000;
 }
 
-/* Flip Card Styling */
 .cardContainer {
-  background-color: transparent;
+  background-color: #0000;
+  justify-content: center;
+  align-items: center;
   width: 500px;
   height: 380px;
   margin: 5px;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .innerCard {
-  position: relative;
+  text-align: center;
   width: 100%;
   height: 100%;
-  text-align: center;
-  transition: transform 1.5s;
   transform-style: preserve-3d;
+  transition: transform 1.5s;
+  position: relative;
 }
 
 .cardContainer:hover .innerCard {
   transform: rotateY(180deg);
 }
 
-/* Term and Description Styling */
-.term,
-.description {
-  position: absolute;
+.term, .description {
+  backface-visibility: hidden;
+  color: #000;
+  border: solid gray;
+  border-radius: 10%;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
-  border-radius: 10%;
-  border: solid grey;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
+  position: absolute;
 }
 
 .term {
@@ -63,17 +57,16 @@
 }
 
 .description {
-  font-size: 1.5rem;
   background-color: #dce7e8;
+  font-size: 1.5rem;
   transform: rotateY(180deg);
 }
 
-/* Page and Container Layout */
 .cardPageContainer {
-  width: 500px;
-  display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 500px;
+  display: flex;
 }
 
 .cardPageContainer button {
@@ -85,31 +78,28 @@
 }
 
 .setContainer {
+  flex-direction: column;
+  justify-content: center;
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
-/* Navigation Buttons Styling */
 .nextAndPrevBtnContainer {
-  display: flex;
   justify-content: space-around;
   margin: 5%;
+  display: flex;
 }
 
 .nextAndPrevBtnContainer button {
   width: 45%;
 }
 
-/* Miscellaneous */
 .toggle_form {
   text-align: center;
 }
 
-/* Media Query for Tablets (768px and below) */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .cardContainer {
     width: 90%;
     height: 200px;
@@ -138,8 +128,7 @@
   }
 }
 
-/* Media Query for Mobile Devices (480px and below) */
-@media (max-width: 480px) {
+@media (width <= 480px) {
   .cardContainer {
     width: 100%;
     height: 200px;
@@ -168,3 +157,4 @@
     margin: 5px 0;
   }
 }
+/*# sourceMappingURL=modern-development-practices-and-optimization-project.eece870d.css.map */

@@ -2,9 +2,10 @@
   "name": "modern-development-practices-and-optimization-project",
   "version": "1.0.0",
   "description": "Modern Development Practices and Optimization Project - Preparing for Production",
-  "main": "index.js",
+  "source": "index.html",
   "type": "module",
   "scripts": {
+    "gulp": "gulp start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

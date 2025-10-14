@@ -1,33 +1,30 @@
-/* TODO: Manually optimize CSS styling. */
-/* Remove unused and unnecessary styling and selectors */
-/* About page Styling */
 .aboutContainer {
-  display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
 
 .aboutContainer img {
+  border-radius: 10%;
   width: 400px;
   height: 300px;
-  border-radius: 10%;
 }
 
 .textContainer {
-  width: 550px;
-  display: flex;
+  white-space: pre-wrap;
   flex-direction: column;
   justify-content: start;
   align-items: start;
+  width: 550px;
   padding: 0 20px 20px 50px;
-  white-space: pre-wrap;
+  display: flex;
 }
 
 .textContainer h2 {
-  font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
+  font-size: 3rem;
 }
 
 .textContainer h3 {
@@ -38,10 +35,7 @@
   font-size: 1.5rem;
 }
 
-
-
-/* Media Query for Tablets (768px and below) */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .aboutContainer {
     flex-direction: column;
     padding: 20px;
@@ -54,9 +48,9 @@
   }
 
   .textContainer {
+    align-items: center;
     width: 90%;
     padding: 0 10px;
-    align-items: center;
   }
 
   .textContainer h2 {
@@ -72,8 +66,7 @@
   }
 }
 
-/* Media Query for Mobile Devices (480px and below) */
-@media (max-width: 480px) {
+@media (width <= 480px) {
   .aboutContainer {
     flex-direction: column;
     padding: 10px;
@@ -86,9 +79,9 @@
   }
 
   .textContainer {
+    align-items: center;
     width: 100%;
     padding: 0 15px;
-    align-items: center;
   }
 
   .textContainer h2 {
@@ -100,7 +93,8 @@
   }
 
   .textContainer p {
-    font-size: 1rem;
     text-align: center;
+    font-size: 1rem;
   }
 }
+/*# sourceMappingURL=modern-development-practices-and-optimization-project.87e01df2.css.map */
