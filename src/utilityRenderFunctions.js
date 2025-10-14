@@ -4,33 +4,37 @@
 // This file contains a number of helper functions that create DOM elements.
 // These functions help prevent code repetition.
 // While the functions are mostly correct, there are some errors, the code is messy and hard to read.
-// Add configuration with ESLint for rules that disallow 'var', unused variables, require a semicolon  
+// Add configuration with ESLint for rules that disallow 'var', unused variables, require a semicolon
 // and at least two other rules: https://eslint.org/docs/latest/rules/
 // Use ESLint to identify the errors and Prettier to format the code.
 
 // Create a general element with specified text
 const createElement = (elementType, text) => {
-  var  element = document.createElement(elementType);
+  let element = document.createElement(elementType);
   element.textContent = text;
   return element;
 };
 
 //Creates images with alt
 const createImage = (url, alt) => {
-  var img = document.createElement('img');
+  let img = document.createElement("img");
   img.src = url;
-  img.alt == alt;
-  return img
-}
+  img.alt = alt;
+  return img;
+};
 
 // Create a header element with specified text and data attribute
 const createHeader = (headerType, text, dataCy) => {
-  var header = document.createElement(headerType);
-  header.textContent = text; header.setAttribute("data-cy", dataCy); return header; }
+  let header = document.createElement(headerType);
+  header.textContent = text;
+  header.setAttribute("data-cy", dataCy);
+  return header;
+};
 
 // Create a button that toggles the visibility of the form
-const createToggleButton = (text, element) => { const button = document.createElement("button");
-button.textContent = text
+const createToggleButton = (text, element) => {
+  const button = document.createElement("button");
+  button.textContent = text;
   button.addEventListener("click", () => {
     element.classList.toggle("notVisible");
   });
@@ -41,9 +45,9 @@ button.textContent = text
 // Form Helper Functions
 // Helper function to create a label element
 const createLabel = (text, htmlFor) => {
-  var label = document.createElement("label");
-   label.textContent = text
-          label.setAttribute("for", htmlFor);
+  let label = document.createElement("label");
+  label.textContent = text;
+  label.setAttribute("for", htmlFor);
   return label;
 };
 
@@ -51,15 +55,14 @@ const createLabel = (text, htmlFor) => {
 const createInput = (name) => {
   const input = document.createElement("input");
   input.name = name;
-input.id = name;
+  input.id = name;
   return input;
 };
 
 const createSubmitButton = (value) => {
-var submit = document.createElement("input");
-        submit.type = "submit";submit.value = value
-  
-  
+  let submit = document.createElement("input");
+  submit.type = "submit";
+  submit.value = value;
   return submit;
 };
 
